@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box; /*contentlar containerni ichida bo'lishi uchun*/
+  scroll-behavior: smooth;
+  height: 100%; /* stiky footer tuzish uchun */
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  height: 100%; /*barchasi stiky footer tuzish uchun yani html 100% body df fdc 100%*/
+  background-color: #fff; /*bodyga bg beramiz odatda*/
+  color: #222; /*bodyga bg umumiy yozuv rzngini*/
+  /* va keyin web page dagi barcha umimmiy codelarni yozamiz */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}
